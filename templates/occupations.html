@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>details of occupation in my family</h1>
+        {% for o in occupations %}
+        <h1>{{o}}</h1>
+        {% endfor %}
+
+        <a href="{% url 'goals' %}"><h1>click here to navigate the details of family goals</h1></a>
+        
+    </center>
+</body>
+</html>
